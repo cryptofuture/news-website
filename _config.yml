@@ -1,7 +1,7 @@
 title: Musicoin News
 description: Musicoin related news
 permalink: ':title/'
-baseurl: ""
+baseurl: "https://cryptofuture.github.io/news-website/"
 url: "https://cryptofuture.github.io/news-website/"
 
 social:
