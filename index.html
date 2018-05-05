@@ -1,0 +1,19 @@
+---
+layout: main
+description: Musicoin related news
+---
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{post.img}})" href="{{post.website}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.website}}">{{post.title}}</a></h2>
+    <span class="post-description"><i>{{post.description}}</i></span><br><br>
+    <span class="post-source">Source: <a href="{{post.website}}">{{post.source}}</a></span>
+  </div>
+</article>
+{% endfor %}
+
+{% include pagination.html %}

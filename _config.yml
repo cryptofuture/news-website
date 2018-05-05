@@ -1,0 +1,31 @@
+title: Musicoin News
+description: Musicoin related news
+permalink: ':title/'
+baseurl: ""
+url: "https://news.musicoin.org"
+
+social:
+  name: Musicoin News
+  links:
+    - https://forum.musicoin.org/
+    - https://twitter.com/musicoins
+    - https://reddit.com/r/musicoin
+    - https://medium.com/@musicoin
+    - https://bitcointalk.org/index.php?topic=1776113.0
+    - https://github.com/musicoin
+    - https://www.facebook.com/lovemusicoin/
+
+compress_html:
+# blanklines: true
+  clippings: [div, p, ul, td, h1, h2, h3, h4]
+  endings: [li, td]
+  comments: all
+  startings: [html, head, body]
+
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate: 8
+paginate_path: "/page/:num"
